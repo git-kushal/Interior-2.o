@@ -2,3 +2,12 @@
     margin: 0%;
     padding: 0%;
 }
+.header{
+    
+    background-image:url(background.png);
+    background-size: cover;
+  background-position: center;
+  width: 1950px;
+  height: 950px;
+
+}
