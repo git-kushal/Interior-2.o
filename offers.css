@@ -23,8 +23,16 @@ nav{
     
 }
 nav img{
-    width: 250px;
+    position: relative;
+    left: 30px;
+    top: 30px;
+    width: 100px;
+    transition: 0.4s;
+    
 
+}
+nav img:hover {
+    transform: scale(1.05);
 }
 .nav-links{
     flex: 1;
