@@ -6,8 +6,9 @@
     
     background-image:url(background.png);
     background-size: cover;
-  background-position: center;
-  width: 1950px;
-  height: 950px;
+    background-position: center;
+    width: 1950px;
+    height: 950px;
+    position: relative;
 
 }
