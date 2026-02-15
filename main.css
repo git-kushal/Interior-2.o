@@ -72,11 +72,21 @@ nav img:hover {
 }
 #thought{
      font-family: "Poppins", sans-serif;
-    font-weight: 100;
-    font-style: normal;
+  font-weight: 500;
+  font-style: italic;
     position: relative;
     top: 350px;
     left:700px;
+    color: #ffffff;
+
+}
+#disclimer{
+    font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+   position: relative;
+    top: 350.5px;
+    left: 800px;
     color: #ffffff;
 
 }
