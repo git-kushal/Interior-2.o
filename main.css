@@ -70,3 +70,13 @@ nav img:hover {
 .nav-links ul li:hover::after{
     width: 100%;
 }
+#thought{
+     font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    position: relative;
+    top: 350px;
+    left:700px;
+    color: #ffffff;
+
+}
