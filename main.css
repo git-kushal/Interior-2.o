@@ -70,23 +70,92 @@ nav img:hover {
 .nav-links ul li:hover::after{
     width: 100%;
 }
-#thought{
-     font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-style: italic;
-    position: relative;
-    top: 350px;
-    left:700px;
-    color: #ffffff;
-
+.hero-text{
+    width:100%;
+    color:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+    animation: fadeUp 1.5s ease forwards;
 }
-#disclimer{
-    font-family: "Poppins", sans-serif;
-  font-weight: 200;
-  font-style: normal;
-   position: relative;
-    top: 350.5px;
-    left: 800px;
-    color: #ffffff;
 
+.hero-text h1{
+    font-family:"Playfair Display", serif;
+    font-size:60px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:18px;
+    font-weight:300;
+    margin-bottom:35px;
+    letter-spacing:1px;
+}
+
+/* ===== BUTTON ===== */
+
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border:1px solid #c8a165;
+    padding:12px 35px;
+    font-size:14px;
+    letter-spacing:1px;
+    transition:1s;
+}
+
+.hero-btn:hover{
+    background:#c8a165;
+    color:#000;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes fadeUp{
+    from{
+        opacity:0;
+        transform:translate(-50%,-40%);
+    }
+    to{
+        opacity:1;
+        transform:translate(-50%,-50%);
+    }
+}
+
+/* ===== Responsive ===== */
+
+@media(max-width:700px){
+
+    nav{
+        padding:20px 30px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #ff5e00;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: right;
+        z-index: 2;
+    }
+
+    .hero-text h1{
+        font-size:20px;
+    }
+
+    .hero-text p{
+        font-size:10px;
+    }
+
+    .nav-links ul li{
+        margin-left:20px;
+    }
 }
