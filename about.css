@@ -28,7 +28,7 @@ nav{
 }
 nav img{
     filter: brightness(1.3)
-            drop-shadow(0 0 6px rgba(255,255,255,0.6));
+    drop-shadow(0 0 6px rgba(255,255,255,0.6));
     position: relative;
     left: 30px;
     top: 18px;
