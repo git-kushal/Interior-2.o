@@ -6,16 +6,11 @@
     font-weight: <weight>;
     font-style: normal;
 }
-.header{
-     background-image:url(header.png);
-    background-size: cover;
-    background-position: center;
-    height: 120px;   
-    width: 100%;
-    position: fixed;
 
-}
 nav{
+    background: linear-gradient(to top, #2a0349, #000000, #000000);
+    
+    height: 135px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,7 +20,7 @@ nav{
 nav img{
     position: relative;
     left: 30px;
-    top: 30px;
+    top: 18px;
     width: 100px;
     transition: 0.4s;
     
