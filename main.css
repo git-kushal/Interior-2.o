@@ -98,6 +98,7 @@ nav img:hover {
 /* ===== BUTTON ===== */
 
 .hero-btn{
+    list-style: none;
     display:inline-block;
     text-decoration:none;
     color:#fff;
