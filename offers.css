@@ -7,7 +7,7 @@
     font-style: normal;
 }
 nav{
-     background:
+     background-image:url(background.png);
     radial-gradient(2px 2px at 20px 30px, white, transparent),
     radial-gradient(1.5px 1.5px at 150px 80px, white, transparent),
     radial-gradient(1px 1px at 300px 120px, white, transparent),
