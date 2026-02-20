@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="main.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editopia</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Emilys+Candy&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <section class="header">
         <nav>
             <a href="main.html"><img src="editopialogo.png" alt="LOGO"></a>
-            
-            <div class="nav-links" id="nav-links" >
+
+            <div class="nav-links" id="nav-links">
                 <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="main.html">HOME</a></li>
@@ -24,35 +26,36 @@
                     <li><a href="work.html">WORK</a></li>
                     <li><a href="offers.html">OFFERS</a></li>
                     <li><a href="contact.html">CONTACT</a></li>
-                    
+
                 </ul>
 
             </div>
-            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        
-    <div class="hero-text">
-        <h1>Create a Space You Never Want to Leave</h1>
-        <p>
-            At Editopia, we create elegant and timeless interior designs.<br>
-            Your Vision, Our Design.
-        </p>
-        <a href="form.html" class="hero-btn">Explore Designs</a>
-    </div>
-</section>
 
-<!---------javascriot for toggle menu-------->
-<script>
-    var navLinks = document.getElementById("navLinks");
+        <div class="hero-text">
+            <h1>Create a Space You Never Want to Leave</h1>
+            <p>
+                At Editopia, we create elegant and timeless interior designs.<br> Your Vision, Our Design.
+            </p>
+            <a href="form.html" class="hero-btn">Explore Designs</a>
+        </div>
+    </section>
 
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
+    <!---------javascriot for toggle menu-------->
+    <script>
+        var navLinks = document.getElementById("nav-links");
 
-    function hideMenu(){
-        navLinks.style.right = "-200px";}
-    </script>>
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
 
-    
+        function hideMenu() {
+            navLinks.style.right = "-260px";
+        }
+    </script>
+
+
 </body>
+
 </html>

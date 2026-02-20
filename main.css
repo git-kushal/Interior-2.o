@@ -38,6 +38,7 @@ nav img:hover {
 .nav-links{
     flex: 1;
     text-align: right;
+    transition: 1s;
     
 }
 .nav-links ul li {
@@ -104,7 +105,7 @@ nav img:hover {
     padding:12px 35px;
     font-size:14px;
     letter-spacing:1px;
-    transition:1s;
+    transition: 1s;
 }
 
 .hero-btn:hover{
@@ -144,10 +145,10 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -300px;
+        right: -260px;
         text-align: right;
         z-index: 2;
-         padding: 30px;
+        padding: 30px;
     }
 
     .hero-text h1{
