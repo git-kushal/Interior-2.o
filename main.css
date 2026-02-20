@@ -6,57 +6,55 @@
     font-weight: normal;
     font-style: normal;
 }
-.header{
-    background-image:url(background.png);
+
+.header {
+    background-image: url(background.png);
     background-size: cover;
     background-position: center;
-    min-height: 100vh;   
+    min-height: 100vh;
     width: 100%;
     position: relative;
-
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
-    
 }
-nav img{
+
+nav img {
     position: relative;
     left: 30px;
     top: 30px;
     width: 100px;
     transition: 0.4s;
-    
-
 }
+
 nav img:hover {
     transform: scale(1.05);
 }
-.nav-links{
+
+.nav-links {
     flex: 1;
     text-align: right;
     transition: 1s;
-    
 }
+
 .nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
     position: relative;
     right: 100px;
-
-
 }
+
 .nav-links ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
-
 }
-.nav-links ul li::after{
+
+.nav-links ul li::after {
     content: '';
     width: 0%;
     height: 3px;
@@ -64,79 +62,82 @@ nav img:hover {
     display: block;
     margin: auto;
     transition: 0.5s;
-    
-
 }
-.nav-links ul li:hover::after{
+
+.nav-links ul li:hover::after {
     width: 100%;
 }
-.hero-text{
-    width:100%;
-    color:#fff;
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    text-align:center;
+
+.hero-text {
+    width: 100%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     animation: fadeUp 1.5s ease forwards;
 }
 
-.hero-text h1{
-    font-family:"Playfair Display", serif;
-    font-size:60px;
-    font-weight:600;
-    margin-bottom:20px;
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
 
-.hero-text p{
-    font-size:18px;
-    font-weight:300;
-    margin-bottom:35px;
-    letter-spacing:1px;
+.hero-text p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 35px;
+    letter-spacing: 1px;
 }
+
 
 /* ===== BUTTON ===== */
 
-.hero-btn{
-    display:inline-block;
-    text-decoration:none;
-    color:#fff;
-    border:1px solid #c8a165;
-    padding:12px 35px;
-    font-size:14px;
-    letter-spacing:1px;
+.hero-btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #c8a165;
+    padding: 12px 35px;
+    font-size: 14px;
+    letter-spacing: 1px;
     transition: 1s;
 }
 
-.hero-btn:hover{
-    background:#c8a165;
-    color:#000;
+.hero-btn:hover {
+    background: #c8a165;
+    color: #000;
 }
-nav .fa{
+
+nav .fa {
     display: none;
 }
 
+
 /* ===== ANIMATIONS ===== */
 
-@keyframes fadeUp{
-    from{
-        opacity:0;
-        transform:translate(-50%,-40%);
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translate(-50%, -40%);
     }
-    to{
-        opacity:1;
-        transform:translate(-50%,-50%);
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
     }
 }
 
+
 /* ===== Responsive ===== */
 
-@media(max-width:700px){
-
-    nav{
-        padding:20px 30px;
+@media(max-width:700px) {
+    nav {
+        padding: 20px 30px;
     }
-    .nav-links ul li{
+    .nav-links ul li {
         display: block;
     }
     .nav-links {
@@ -145,29 +146,41 @@ nav .fa{
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -260px;
+        right: -300px;
         text-align: right;
         z-index: 2;
         padding: 30px;
     }
-
-    .hero-text h1{
-        font-size:20px;
+    .hero-text h1 {
+        font-size: 20px;
     }
-
-    .hero-text p{
-        font-size:10px;
+    .hero-text p {
+        font-size: 10px;
     }
-
-    .nav-links ul li{
-        margin-left:20px;
+    .nav-links ul li {
+        margin-left: 20px;
     }
-    nav .fa{
+    nav .fa {
         display: block;
         color: #fff;
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
     }
-    
+}
+
+
+/*-------about-------*/
+
+.about {
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
 }
