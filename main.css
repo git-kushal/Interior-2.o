@@ -160,4 +160,12 @@ nav .fa{
     .nav-links ul li{
         margin-left:20px;
     }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    
 }
