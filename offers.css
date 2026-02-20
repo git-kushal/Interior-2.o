@@ -6,6 +6,9 @@
     font-weight: <weight>;
     font-style: normal;
 }
+html{
+    scroll-behavior: smooth;
+}
 nav{
     position: relative;
     overflow: hidden;

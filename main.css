@@ -6,9 +6,6 @@
     font-weight: normal;
     font-style: normal;
 }
-html{
-    scroll-behavior: smooth;
-}
 .header{
     background-image:url(background.png);
     background-size: cover;
@@ -113,6 +110,9 @@ nav img:hover {
 .hero-btn:hover{
     background:#c8a165;
     color:#000;
+}
+nav .fa{
+    display: none;
 }
 
 /* ===== ANIMATIONS ===== */
