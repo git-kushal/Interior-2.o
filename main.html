@@ -16,8 +16,8 @@
         <nav>
             <a href="main.html"><img src="editopialogo.png" alt="LOGO"></a>
             
-            <div class="nav-links">
-                <i class="fa fa-window-close"></i>
+            <div class="nav-links" id="nav-links" >
+                <i class="fa fa-window-close" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="main.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -28,7 +28,7 @@
                 </ul>
 
             </div>
-            <i class="fa fa-bars" aria-hidden="true"></i>
+            <i class="fa fa-bars" aria-hidden="true" onclick="showMenu()"></i>
         </nav>
         
     <div class="hero-text">
@@ -39,9 +39,9 @@
         </p>
         <a href="form.html" class="hero-btn">Explore Designs</a>
     </div>
-    
-                                 
 </section>
+
+<!---------javascriot for toggle menu-------->
 <script>
     var navLinks = document.getElementById("navLinks");
 
