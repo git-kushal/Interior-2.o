@@ -235,3 +235,33 @@ h3 {
     text-align: center;
     padding-top: 100px;
 }
+
+.row-work {
+    margin-bottom: 5%;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container {
+    margin: 100px 0 0 200px;
+    width: 70%;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container img {
+    width: 10%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 10px solid rgba(rgb(5, 2, 70), rgb(54, 2, 56), rgb(255, 0, 17), alpha);
+    transition: all ease-in-out 0.5s;
+}
+
+.container img:hover {
+    width: 25%;
+}
