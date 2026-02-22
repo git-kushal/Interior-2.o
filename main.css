@@ -226,3 +226,12 @@ h3 {
         flex-direction: column;
     }
 }
+
+
+/*-------------work------------*/
+
+.work {
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
