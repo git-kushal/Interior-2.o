@@ -192,3 +192,9 @@ pre {
     line-height: 22px;
     padding: 10px;
 }
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
