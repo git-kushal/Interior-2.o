@@ -202,7 +202,7 @@ pre {
 }
 
 .about-col {
-    flex-basis: 500px;
+    flex-basis: 400px;
     background: #fff3f3;
     border-radius: 10px;
     margin-bottom: 5%;
@@ -219,4 +219,10 @@ h3 {
 
 .about-col:hover {
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width: 500px) {
+    .row {
+        flex-direction: column;
+    }
 }
