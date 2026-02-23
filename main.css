@@ -311,3 +311,17 @@ h3 {
 
 
 /*-------------service------------*/
+
+.service {
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.text-service {
+    color: rgb(245, 119, 153);
+    font-family: "Playfair Display", serif;
+    font-size: 60px;
+    font-weight: 600px;
+    margin-bottom: 20px;
+}
