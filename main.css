@@ -378,13 +378,9 @@ h3 {
 }
 
 .product-card {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    gap: 30px;
-    /* Space between cards */
-    / width: 320px;
+    width: 320px;
+    display: inline-block;
+    gap: 10px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.2);
