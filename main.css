@@ -39,6 +39,9 @@ nav img:hover {
 }
 
 .nav-links {
+    position: fixed;
+    top: 5%;
+    right: 0%;
     flex: 1;
     text-align: right;
     transition: 1s;
@@ -601,5 +604,4 @@ h3 {
 
 .icons {
     color: #ff5e00;
-    margin: 5%;
 }
