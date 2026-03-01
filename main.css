@@ -150,7 +150,7 @@ nav .fa {
     .nav-links {
         position: absolute;
         background: #ff5e00;
-        height: 100vh;
+        height: 93.5vh;
         width: 200px;
         top: 0;
         right: -300px;
@@ -180,6 +180,7 @@ nav .fa {
 /*-------about-------*/
 
 .about {
+    background: linear-gradient(135deg, #7c7401, #77006d);
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -241,6 +242,7 @@ h3 {
 /*-------------work------------*/
 
 .work {
+    background-color: rgb(248, 243, 225);
     margin: auto;
     text-align: center;
     padding-top: 100px;
