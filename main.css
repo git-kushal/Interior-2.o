@@ -371,13 +371,13 @@ h3 {
 }
 
 
-/*-------------service------------*/
+/*-------------offer------------*/
 
 .offer {
+    background-color: rgb(248, 243, 225);
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background-color: rgb(248, 243, 225);
 }
 
 .offer h1 {
