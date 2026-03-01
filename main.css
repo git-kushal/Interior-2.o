@@ -180,7 +180,7 @@ nav .fa {
 /*-------about-------*/
 
 .about {
-    background: linear-gradient(135deg, #7c7401, #77006d);
+    background-color: rgb(248, 243, 225);
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -322,6 +322,7 @@ h3 {
 /*-------------service------------*/
 
 .service {
+    background-color: rgb(248, 243, 225);
     margin: auto;
     text-align: center;
     padding-top: 100px;
@@ -376,7 +377,7 @@ h3 {
     margin: auto;
     text-align: center;
     padding-top: 100px;
-    background: linear-gradient(135deg, #ffffff, #0f2027, #203a43, #2c5364, #ffffff);
+    background-color: rgb(248, 243, 225);
 }
 
 .offer h1 {
@@ -585,6 +586,7 @@ h3 {
 /*-------footer-------*/
 
 .footer {
+    background-color: rgb(248, 243, 225);
     width: 100%;
     text-align: center;
     padding-top: 5px;
