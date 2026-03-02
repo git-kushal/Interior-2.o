@@ -1,18 +1,25 @@
 * {
     margin: 0%;
     padding: 0%;
-    font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
+    box-sizing: border-box;
 }
 
-.box {
-    position: fixed;
-    left: 700px;
-    top: 150px;
-    border-radius: 10px;
-    background-color: brown;
-    width: 500px;
-    height: 650px;
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.impot-group {
+    position: relative;
+    width: 300px;
+}
+
+.impot-group input {
+    width: 100%;
+    padding: 14px 10px;
+    font-size: 16px;
+    border: 1px solid #068fff;
 }
