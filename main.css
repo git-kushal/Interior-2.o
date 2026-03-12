@@ -287,15 +287,10 @@ h3 {
     border-radius: 10px;
     border: 10px solid rgba(rgb(5, 2, 70), rgb(54, 2, 56), rgb(255, 0, 17), alpha);
     transition: all ease-in-out 0.5s;
-    transform: scale(1) rotateX(0deg);
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18);
 }
 
 .container img:hover {
     width: 32%;
-    transform: scale(1.15) translateZ(80px);
-    z-index: 10;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.35);
 }
 
 @media(max-width: 700px) {
