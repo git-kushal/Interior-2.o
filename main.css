@@ -405,9 +405,6 @@ h3 {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
 }
 
-
-/* Image Box Styling */
-
 .image-box {
     position: relative;
     width: 100%;
@@ -426,9 +423,6 @@ h3 {
     transform: scale(1.15);
 }
 
-
-/* Discount Badge */
-
 .discount {
     position: absolute;
     top: 15px;
@@ -441,9 +435,6 @@ h3 {
     font-weight: bold;
     z-index: 2;
 }
-
-
-/* Wishlist Icon */
 
 .wishlist-icon {
     position: absolute;
@@ -466,9 +457,6 @@ h3 {
     color: white;
 }
 
-
-/* Content Styling */
-
 .content {
     padding: 20px;
     text-align: center;
@@ -489,9 +477,6 @@ h3 {
     color: #fda643;
 }
 
-
-/* Rating */
-
 .rating {
     display: flex;
     justify-content: center;
@@ -507,9 +492,6 @@ h3 {
     font-size: 12px;
     margin-left: 5px;
 }
-
-
-/* Price */
 
 .price-row {
     display: flex;
@@ -530,9 +512,6 @@ h3 {
     color: #747d8c;
     font-size: 16px;
 }
-
-
-/* Button */
 
 .cart-btn {
     width: 100%;
