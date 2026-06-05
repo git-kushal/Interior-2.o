@@ -4,107 +4,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Design Portal - Login</title>
     <link rel="stylesheet" href="form.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
-
 </head>
 
 <body>
     <div class="container">
-        <!--login form-->
-        <div class="form-box login">
-            <form action="#">
-                <h1>Login</h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Username" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <div class="forgot-link">
-                    <a href="#">Forgot Password?</a>
-                </div>
-                <button type="submit" class="btn"><a href="main.html">Login</a></button>
-                <p>or login with social platforms</p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-square-linkedin"></i>
-                    </a>
-                </div>
-            </form>
+        <div class="welcome-section">
+            <h1>Design Portal</h1>
+            <p>Access your internal design workspace. Share, collaborate, and create amazing designs with your team.</p>
         </div>
 
-        <!--register from-->
-        <div class="form-box register">
-            <form action="#">
-                <h1>Registestration</h1>
-                <div class="input-box">
-                    <input type="text" placeholder="Username" required>
-                    <i class="fa-solid fa-user"></i>
-                </div>
-                <div class="input-box">
-                    <input type="email" placeholder="Email" required>
-                    <i class="fa-solid fa-envelope"></i>
-                </div>
-                <div class="input-box">
-                    <input type="password" placeholder="Password" required>
-                    <i class="fa-solid fa-lock"></i>
-                </div>
-                <button type="submit" class="btn"><a href="main.html">Register</a></button>
-                <p>or Register with social platforms</p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="fa-brands fa-google"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa-brands fa-facebook"></i>
-                    </a>
-                    <a href="https://github.com/git-kushal">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kushal-das-8a55b033b/">
-                        <i class="fa-brands fa-square-linkedin"></i>
-                    </a>
-                </div>
-            </form>
-        </div>
-
-
-        <!--toggle box-->
-        <div class="toggle-box">
-
-            <!--toggle box left-->
-            <div class="toggle-panel toggle-left">
-                <h1>Hello Welcome!</h1>
-                <p>Dot't have an account?</p>
-                <button class="btn register-btn">Register</button>
-
+        <div class="form-section">
+            <div class="form-toggle">
+                <button class="toggle-btn active" onclick="showForm('login')">Login</button>
+                <button class="toggle-btn" onclick="showForm('register')">Register</button>
             </div>
 
-            <!--toggle box right-->
-            <div class="toggle-panel toggle-right">
-                <h1>Welcome Back!</h1>
-                <p>Alrady have a account?</p>
-                <button class="btn login-btn">Login</button>
+            <!-- Login Form -->
+            <div id="login-form" class="form-container active">
+                <form id="login">
+                    <div class="form-group">
+                        <label for="login-email">Email</label>
+                        <input type="email" id="login-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="login-password">Password</label>
+                        <input type="password" id="login-password" placeholder="Enter your password" required>
+                    </div>
+                    <button type="submit" class="btn">Login</button>
+                    <div class="forgot-password">
+                        <a href="#">Forgot your password?</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Register Form -->
+            <div id="register-form" class="form-container">
+                <form id="register">
+                    <div class="form-group">
+                        <label for="register-name">Full Name</label>
+                        <input type="text" id="register-name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-email">Email</label>
+                        <input type="email" id="register-email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-password">Password</label>
+                        <input type="password" id="register-password" placeholder="Create a password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="register-confirm">Confirm Password</label>
+                        <input type="password" id="register-confirm" placeholder="Confirm your password" required>
+                    </div>
+                    <button type="submit" class="btn">Create Account</button>
+                </form>
             </div>
         </div>
     </div>
 
+    <script>
+        function showForm(formType) {
+            // Update toggle buttons
+            document.querySelectorAll('.toggle-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
 
+            // Show/hide forms
+            document.getElementById('login-form').classList.remove('active');
+            document.getElementById('register-form').classList.remove('active');
+            document.getElementById(formType + '-form').classList.add('active');
+        }
+
+        // Form submission handlers
+        document.getElementById('login').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email').value;
+            const password = document.getElementById('login-password').value;
+            console.log('Login attempt:', {
+                email,
+                password
+            });
+            // Add your login logic here
+        });
+
+        document.getElementById('register').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('register-name').value;
+            const email = document.getElementById('register-email').value;
+            const password = document.getElementById('register-password').value;
+            const confirm = document.getElementById('register-confirm').value;
+
+            if (password !== confirm) {
+                alert('Passwords do not match!');
+                return;
+            }
+
+            console.log('Registration attempt:', {
+                name,
+                email,
+                password
+            });
+            // Add your registration logic here
+        });
+    </script>
 </body>
-<script src="script.js">
-</script>
 
 </html>
