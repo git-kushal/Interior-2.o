@@ -144,6 +144,11 @@ nav .fa {
     nav {
         padding: 20px 30px;
     }
+    nav img {
+        left: 10px;
+        top: 8px;
+        width: 60px;
+    }
     .nav-links ul li {
         display: block;
     }
